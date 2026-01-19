@@ -23,4 +23,7 @@ echo "✓ Linked nvim config"
 ln -sf ~/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 echo "✓ Linked tmux config"
 
+ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
+echo "✓ Linked latexmkrc"
+
 echo "Done! Dotfiles setup complete."
