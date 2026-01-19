@@ -6,15 +6,20 @@ return {
 		vim.g.vimtex_view_general_options = "--unique file:@pdf\\#src:@line@tex"
 		vim.g.vimtex_compiler_method = "latexmk"
 		vim.g.vimtex_compiler_latexmk = {
+			out_dir = "build",
 			options = {
-				"-lualatex",
 				"-verbose",
 				"-file-line-error",
 				"-synctex=1",
 				"-interaction=nonstopmode",
+				"-outdir=build",
 			},
 		}
+		vim.g.vimtex_compiler_latexmk_engines = {
+			_ = "-lualatex",
+		}
 	end,
+
 	keys = {
 		{ "<leader>ll", "<cmd>VimtexCompile<cr>", desc = "VimTeX Compile", ft = "tex" },
 		{ "<leader>lv", "<cmd>VimtexView<cr>", desc = "VimTeX View", ft = "tex" },
