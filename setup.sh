@@ -26,4 +26,8 @@ echo "✓ Linked tmux config"
 ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
 echo "✓ Linked latexmkrc"
 
+ln -sf ~/dotfiles/lilypond-compile.sh ~/.local/bin/lilypond-compile.sh
+echo "✓ Linked lilypond-compile"
+
+echo "Done! Dotfiles setup complete."
 echo "Done! Dotfiles setup complete."
