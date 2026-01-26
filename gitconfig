@@ -1,3 +1,5 @@
 [user]
 	name = Oliver Heck
 	email = 5255945+oliverheck@users.noreply.github.com
+[core]
+	editor = nvim
