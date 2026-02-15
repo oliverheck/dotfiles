@@ -15,8 +15,9 @@ DIRNAME=$(dirname "$INPUT_FILE")
 mkdir -p "$DIRNAME/output"
 mkdir -p "$DIRNAME/logs"
 
-# Compile with output redirection
-lilypond --output="$DIRNAME/output/$BASENAME" "$INPUT_FILE" 2>&1 | tee "$DIRNAME/logs/$BASENAME.log"
+# Compile with output redirection and local lib-files
+LILY_LIB="/home/oliver/lilypond-scores/lib"
+lilypond --include="$LILY_LIB" --output="$DIRNAME/output/$BASENAME" "$INPUT_FILE" 2>&1 | tee "$DIRNAME/logs/$BASENAME.log"
 
 echo "Output written to: $DIRNAME/output/"
 echo "Log written to: $DIRNAME/logs/$BASENAME.log"
