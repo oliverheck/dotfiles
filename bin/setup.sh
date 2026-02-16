@@ -31,6 +31,6 @@ ln -sf ~/dotfiles/lilypond-compile.sh ~/.local/bin/lilypond-compile.sh
 echo "✓ Linked lilypond-compile
 
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
-echo "✓ Linked ghostty config""
+echo "✓ Linked ghostty config"
 
 echo "Done! Dotfiles setup complete."
