@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
 fi
 
 TITEL="$1"
-QUELLE="/home/oliver/lilypond/templates/template-jazz-standard.ly"
-ZIEL="/home/oliver/lilypond/jazz-standards/${TITEL}.ly"
+QUELLE="/home/oliver/lilypond-scores/templates/template-jazz-standard.ly"
+ZIEL="/home/oliver/lilypond-scores/jazz-standards/${TITEL}.ly"
 
 cp "$QUELLE" "$ZIEL" && echo "Erstellt: $ZIEL"

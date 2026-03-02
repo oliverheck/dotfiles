@@ -1,3 +1,8 @@
+local compile_with_lilycomp = function()
+	local file = vim.fn.expand("%")
+	vim.cmd("!" .. "lilycomp " .. file)
+end
+
 return {
 	{
 		"martineausimon/nvim-lilypond-suite",
@@ -16,9 +21,10 @@ return {
 			})
 		end,
 		keys = {
-			{ "<leader>lc", "<cmd>LilyPondCompile<cr>", desc = "Compile LilyPond" },
+			{ "<leader>ll", "<cmd>LilyPondCompile<cr>", desc = "Compile LilyPond" },
 			{ "<leader>lp", "<cmd>LilyPondOpenPDF<cr>", desc = "Open PDF" },
 			{ "<leader>lm", "<cmd>LilyPondPlayMIDI<cr>", desc = "Play MIDI" },
+			{ "<leader>lc", compile_with_lilycomp, desc = "Compile with lilycomp" },
 		},
 	},
 }

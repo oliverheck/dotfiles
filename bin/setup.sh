@@ -27,8 +27,11 @@ echo "✓ Linked tmux config"
 ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
 echo "✓ Linked latexmkrc"
 
-ln -sf ~/dotfiles/lilypond-compile.sh ~/.local/bin/lilypond-compile.sh
-echo "✓ Linked lilypond-compile
+ln -sf ~/dotfiles/lilypond-make-standard.sh ~/.local/bin/lilymkstd
+echo "✓ Linked lilypond-make-standard"
+
+ln -sf ~/dotfiles/lilypond-compile.sh ~/.local/bin/lilycomp
+echo "✓ Linked lilypond-compile"
 
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
 echo "✓ Linked ghostty config"

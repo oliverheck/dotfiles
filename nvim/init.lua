@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Leader keys müssen VOR lazy.setup gesetzt werden
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = "-"
 
 -- Setup LazyVim
 require("lazy").setup({
