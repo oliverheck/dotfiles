@@ -14,3 +14,4 @@ export VISUAL=nvim
 export EDITOR=nvim
 
 alias playmidi='fluidsynth -a pulseaudio -i /usr/share/soundfonts/FluidR3_GM.sf2'
+export PATH="$HOME/.npm-global/bin:$PATH"
