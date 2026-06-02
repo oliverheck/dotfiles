@@ -3,3 +3,7 @@
 	email = 5255945+oliverheck@users.noreply.github.com
 [core]
 	editor = nvim
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
