@@ -15,6 +15,8 @@ export EDITOR=nvim
 
 alias playmidi='fluidsynth -a pulseaudio -i /usr/share/soundfonts/FluidR3_GM.sf2'
 
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 restic-bequiet() {
     local paket="${1:?Paket angeben: config|knowledge|dev|documents|creative|garmin}"
     shift
