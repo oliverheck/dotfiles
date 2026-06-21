@@ -11,29 +11,29 @@ echo "Setting up dotfiles..."
 mkdir -p ~/.config/tmux
 
 # Create symlinks
-ln -sf ~/dotfiles/gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
 echo "✓ Linked .gitconfig"
 
-ln -sf ~/dotfiles/bashrc ~/.bashrc
+ln -sf ~/.dotfiles/bashrc ~/.bashrc
 echo "✓ Linked .bashrc"
 
 rm -f ~/.config/nvim
-ln -sf ~/dotfiles/nvim ~/.config/nvim
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
 echo "✓ Linked nvim config"
 
-ln -sf ~/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
+ln -sf ~/.dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 echo "✓ Linked tmux config"
 
-ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
+ln -sf ~/.dotfiles/.latexmkrc ~/.latexmkrc
 echo "✓ Linked latexmkrc"
 
-ln -sf ~/dotfiles/bin/lily-make-standard.sh ~/.local/bin/lilymkstd
+ln -sf ~/.dotfiles/bin/lily-make-standard.sh ~/.local/bin/lilymkstd
 echo "✓ Linked lilypond-make-standard"
 
-ln -sf ~/dotfiles/bin/lily-compile.sh ~/.local/bin/lilycomp
+ln -sf ~/.dotfiles/bin/lily-compile.sh ~/.local/bin/lilycomp
 echo "✓ Linked lilypond-compile"
 
-ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
+ln -sf ~/.dotfiles/ghostty/config ~/.config/ghostty/config
 echo "✓ Linked ghostty config"
 
 echo "Done! Dotfiles setup complete."
