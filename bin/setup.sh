@@ -1,6 +1,6 @@
 #!/bin/bash
 # Dotfiles Setup Script
-# Creates symlinks from home directory to dotfiles in ~/dotfiles
+# Creates symlinks from home directory to dotfiles in ~/.dotfiles
 
 # Exit on any error
 set -e
