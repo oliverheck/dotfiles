@@ -33,6 +33,9 @@ echo "✓ Linked lilypond-make-standard"
 ln -sf ~/.dotfiles/bin/lily-compile.sh ~/.local/bin/lilycomp
 echo "✓ Linked lilypond-compile"
 
+ln -sf ~/.dotfiles/bin/ocr-konto.sh ~/.local/bin/ocr-konto
+echo "✓ Linked ocr-konto"
+
 ln -sf ~/.dotfiles/ghostty/config ~/.config/ghostty/config
 echo "✓ Linked ghostty config"
 
